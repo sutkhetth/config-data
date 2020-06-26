@@ -10,6 +10,9 @@ eureka:
 zuul:
   ignored-services: '*'
   routes:
+    customer-service:
+      path: /customer-service/**
+      service-id: customer-service
     auth-admin:
       path: /admin/**
       service-id: auth-service
